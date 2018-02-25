@@ -1,4 +1,4 @@
-# docker-cuda-opencv
+# cuda-opencv
 Dockerfile for building/adding opencv to cuda9.1 image
 
 to build:
