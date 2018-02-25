@@ -1,7 +1,6 @@
 FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 LABEL maintainer "jamesdavidmorris@gmail.com"
 
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         build-essential \
