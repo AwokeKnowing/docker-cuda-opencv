@@ -1,6 +1,5 @@
-FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 LABEL maintainer "jamesdavidmorris@gmail.com"
-
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -24,6 +23,9 @@ RUN apt-get update && \
         python3-numpy \
         wget \
         unzip \
+        curl \
+        git \
+        nano \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
